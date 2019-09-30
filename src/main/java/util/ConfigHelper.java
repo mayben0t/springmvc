@@ -56,4 +56,11 @@ public class ConfigHelper {
     public static String getAppAssetPath(){
         return PropsUtil.getString(CONFIG_PROPS,ConfigConstant.APP_ASSET_PATH,"/asset/");
     }
+
+    /**
+     * 获取 String 类型的属性值（可指定默认值）
+     */
+    public static String getString(String key, String defaultValue) {
+        return PropsUtil.getString(CONFIG_PROPS, key, defaultValue);
+    }
 }
